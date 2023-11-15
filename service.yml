@@ -4,7 +4,7 @@ metadata:
   name: web-service
 spec:
   selector:
-    app: web-deploy
+    app.kubernetes.io/name: web-deploy
   type: ClusterIP
   ports:
   - protocol: TCP

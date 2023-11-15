@@ -6,11 +6,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: web-deploy
+      app.kubernetes.io/name: web-deploy
   template:
     metadata:
       labels:
-        app: web-deploy
+        app.kubernetes.io/name: web-deploy
     spec:
       containers:
       - name: nginx
